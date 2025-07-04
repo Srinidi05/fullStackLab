@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fur Babies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="flex flex-col min-h-full">
+    <!-- Header -->
+    <header class="bg-gray-400 text-black px-4 py-4" x-data="{ open: false }">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between"
+      >
+        <div class="flex justify-between items-center w-full md:w-auto">
+          <h1 class="text-3xl font-bold text-center md:text-left">
+            FUR BABIES!
+          </h1>
+          <!-- Hamburger Button -->
+          <button
+            @click="open = !open"
+            class="md:hidden text-2xl focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            <i :class="open ? 'fas fa-times' : 'fas fa-bars'"></i>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav
+          class="flex-col md:flex md:flex-row md:space-x-4 text-lg text-center md:text-left"
+          :class="open ? 'flex mt-4 space-y-2 md:mt-0 md:space-y-0' : 'hidden md:flex'"
+        >
+          <a href="./index.html" class="hover:text-gray-700">Home</a>
+          <a href="./places.html" class="hover:text-gray-700">Locations</a>
+          <a href="./gallery.html" class="hover:text-gray-700">Gallery</a>
+          <a href="./contact.html" class="hover:text-gray-700">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Rest of the page remains unchanged -->
+    <main
+      class="relative flex flex-col items-center justify-center text-white text-center px-4 py-10 flex-grow bg-cover bg-center"
+      style="background-image: url('./hefb.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+      <div class="relative z-10 max-w-2xl space-y-6">
+        <p class="text-lg md:text-2xl">
+          Families that spread out to furry children too!
+        </p>
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          class="w-full sm:w-3/5 max-w-xl mx-auto rounded shadow-lg"
+        >
+          <source src="./videoplayback.mp4" type="video/mp4" />
+          <track src="./video.vtt" default />
+          Your browser does not support the video tag.
+        </video>
+
+        <audio controls muted class="w-full">
+          <source src="./calmingaudio.mp3.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <a
+          href="./gallery.html"
+          class="inline-block mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition duration-300"
+        >
+          Explore Now
+        </a>
+      </div>
+    </main>
+
+    <footer class="relative bg-gray-400 p-4 text-black">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+        <h3 class="text-lg font-semibold mb-2 sm:mb-0">Visit us on:</h3>
+        <div
+          class="space-y-2 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row"
+        >
+          <p class="flex items-center gap-2">
+            <i class="fab fa-instagram"></i> Instagram
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="fab fa-facebook"></i> Facebook
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="fab fa-twitter"></i> Twitter
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="fab fa-reddit"></i> Reddit
+          </p>
+        </div>
+      </div>
+
+      <!-- Dog paw SVG -->
+      <div class="hidden md:block absolute bottom-2 right-2 w-16 h-16">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+          <ellipse cx="100" cy="130" rx="40" ry="30" fill="#1F2937" />
+          <ellipse cx="60" cy="80" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="90" cy="60" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="110" cy="60" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="140" cy="80" rx="15" ry="20" fill="#1F2937" />
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

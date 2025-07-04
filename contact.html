@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fur Babies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="flex flex-col min-h-full bg-gray-200">
+    <!-- Header -->
+    <header class="bg-gray-400 text-black px-4 py-4">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between"
+      >
+        <h1 class="text-3xl font-bold mb-4 md:mb-0 text-center md:text-left">
+          FUR BABIES!
+        </h1>
+        <nav
+          class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-4 text-lg text-center md:text-left"
+        >
+          <a href="./index.html" class="hover:text-gray-700">Home</a>
+          <a href="./places.html" class="hover:text-gray-700">Locations</a>
+          <a href="./gallery.html" class="hover:text-gray-700">Gallery</a>
+          <a href="./contact.html" class="hover:text-gray-700">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="bg-white/80 p-6 rounded-xl shadow-lg max-w-xl mx-auto my-10 w-11/12"
+    >
+      <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">
+        Contact Us
+      </h2>
+
+      <form class="space-y-4">
+        <!-- Name -->
+        <div>
+          <label for="name" class="block text-gray-700 font-medium">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-gray-700 font-medium"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+        </div>
+
+        <!-- Query -->
+        <div>
+          <label for="message" class="block text-gray-700 font-medium"
+            >Your Query</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your message..."
+            class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-yellow-400 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-300 transition duration-300"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-gray-400 p-4 text-black">
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+        >
+          <h3 class="text-lg font-semibold mb-2 sm:mb-0">Visit us on:</h3>
+          <div
+            class="space-y-2 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row"
+          >
+            <p class="flex items-center gap-2">
+              <i class="fab fa-instagram"></i> Instagram
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fab fa-facebook"></i> Facebook
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fab fa-twitter"></i> Twitter
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fab fa-reddit"></i> Reddit
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dog paw SVG at bottom-right (hidden on small screens) -->
+      <div class="hidden md:block absolute bottom-2 right-2 w-16 h-16">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+          <!-- Main pad -->
+          <ellipse cx="100" cy="130" rx="40" ry="30" fill="#1F2937" />
+          <!-- Toe pads -->
+          <ellipse cx="60" cy="80" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="90" cy="60" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="110" cy="60" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="140" cy="80" rx="15" ry="20" fill="#1F2937" />
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

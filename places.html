@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fur Babies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="flex flex-col min-h-full bg-gray-200">
+    <!-- Header -->
+    <header class="bg-gray-400 text-black px-4 py-4">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between"
+      >
+        <h1 class="text-3xl font-bold mb-4 md:mb-0 text-center md:text-left">
+          FUR BABIES!
+        </h1>
+        <nav
+          class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-4 text-lg text-center md:text-left"
+        >
+          <a href="./index.html" class="hover:text-gray-700">Home</a>
+          <a href="./places.html" class="hover:text-gray-700">Locations</a>
+          <a href="./gallery.html" class="hover:text-gray-700">Gallery</a>
+          <a href="./contact.html" class="hover:text-gray-700">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="text-3xl text-center text-gray-800">Our main locations</h2>
+      <div class="flex flex-wrap justify-center gap-4 p-4">
+        <img src="./wud.jpg" class="w-64 h-48 object-cover rounded" alt="" />
+        <img src="./img.jpg" class="w-64 h-48 object-cover rounded" alt="" />
+        <img src="./imgf.jpg" class="w-64 h-48 object-cover rounded" alt="" />
+        <img src="./ienc.jpg" class="w-64 h-48 object-cover rounded" alt="" />
+        <img src="./taj.jpg" class="w-64 h-48 object-cover rounded" alt="" />
+      </div>
+    </main>
+
+    <footer class="relative bg-gray-400 p-4 text-black">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+        <h3 class="text-lg font-semibold mb-2 sm:mb-0">Visit us on:</h3>
+        <div
+          class="space-y-2 sm:space-y-0 sm:space-x-6 flex flex-col sm:flex-row"
+        >
+          <p class="flex items-center gap-2">
+            <i class="fab fa-instagram"></i> Instagram
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="fab fa-facebook"></i> Facebook
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="fab fa-twitter"></i> Twitter
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="fab fa-reddit"></i> Reddit
+          </p>
+        </div>
+      </div>
+
+      <!-- Dog paw SVG at bottom-right (hidden on small screens) -->
+      <div class="hidden md:block absolute bottom-2 right-2 w-16 h-16">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+          <ellipse cx="100" cy="130" rx="40" ry="30" fill="#1F2937" />
+          <ellipse cx="60" cy="80" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="90" cy="60" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="110" cy="60" rx="15" ry="20" fill="#1F2937" />
+          <ellipse cx="140" cy="80" rx="15" ry="20" fill="#1F2937" />
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

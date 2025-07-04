@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      h1,
+      p {
+        transition: color 0.6s ease-in-out 3;
+      }
+      h1:hover,
+      p:hover {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-emerald-300 h-auto">
+      <h1 class="italic text-4xl font-bold text-center font-serif p-10">
+        Travel Explorer
+      </h1>
+      <a class="block underline text-center" href="./flexi.html">Our scenes</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="m-40">
+      <!-- Paragraphs -->
+      <section>
+        <p class="text-red-700 p-4 font-sans border-8">
+          Travel opens our eyes to the beauty of the world, from towering
+          mountains to serene beaches. It enriches our understanding of diverse
+          cultures and ways of life.
+        </p>
+        <br />
+        <p class="p-4 font-sans border-8">
+          Exploring new destinations allows us to escape routine and embrace the
+          thrill of adventure. Whether solo or with companions, each journey
+          brings unique memories.
+        </p>
+        <br />
+        <p class="text-red-700 p-4 font-sans border-8">
+          Local cuisines, historic landmarks, and natural wonders make each
+          place a story waiting to be told. Every location adds a new chapter to
+          your personal travel diary.
+        </p>
+        <br />
+        <p class="p-4 font-sans border-8">
+          With careful planning and an open mind, travel can be both exciting
+          and educational. So pack your bags and let the journey begin!
+        </p>
+        <br />
+      </section>
+
+      <!-- Images -->
+      <section class="flex-wrap border-8">
+        <img class="p-3 w-full" src="./bgimg.jpeg" alt="Travel Image 1" />
+        <img class="p-3 w-full" src="./bg2img.jpeg" alt="Travel Image 2" />
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-300">
+      <h2 class="text-xl">Stay Connected</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="state">State:</label><br />
+        <input type="text" id="state" name="state" /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </footer>
+  </body>
+</html>
