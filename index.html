@@ -16,7 +16,6 @@
   </head>
 
   <body class="flex flex-col min-h-full">
-    <!-- Header -->
     <header class="bg-gray-400 text-black px-4 py-4" x-data="{ open: false }">
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between"
@@ -25,7 +24,6 @@
           <h1 class="text-3xl font-bold text-center md:text-left">
             FUR BABIES!
           </h1>
-          <!-- Hamburger Button -->
           <button
             @click="open = !open"
             class="md:hidden text-2xl focus:outline-none"
@@ -35,7 +33,6 @@
           </button>
         </div>
 
-        <!-- Navigation Links -->
         <nav
           class="flex-col md:flex md:flex-row md:space-x-4 text-lg text-center md:text-left"
           :class="open ? 'flex mt-4 space-y-2 md:mt-0 md:space-y-0' : 'hidden md:flex'"
@@ -48,7 +45,6 @@
       </div>
     </header>
 
-    <!-- Rest of the page remains unchanged -->
     <main
       class="relative flex flex-col items-center justify-center text-white text-center px-4 py-10 flex-grow bg-cover bg-center"
       style="background-image: url('./hefb.jpg')"
@@ -107,7 +103,6 @@
         </div>
       </div>
 
-      <!-- Dog paw SVG -->
       <div class="hidden md:block absolute bottom-2 right-2 w-16 h-16">
         <svg viewBox="0 0 200 200" class="w-full h-full">
           <ellipse cx="100" cy="130" rx="40" ry="30" fill="#1F2937" />
